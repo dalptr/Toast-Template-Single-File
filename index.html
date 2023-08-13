@@ -7,17 +7,19 @@
 </head>
 <body>
 
-<button onclick="showSuccessToast();" class="btn btn--success">Show success toast</button>
+<button id="show-success-toast">Show success toast</button>
+
+</body>
 
 <script>
-    function showSuccessToast() {
+    document.getElementById("show-success-toast").addEventListener("click", () => {
         toast({
-            title: "Success",
-            message: "You have successfully created an account",
+            title: "Thành công!",
+            message: "Bạn đã đăng ký thành công tài khoản tại F8.",
             type: "success",
-            duration: 3000
+            duration: 5000
         });
-    }
+    });
 </script>
-</body>
+
 </html>
