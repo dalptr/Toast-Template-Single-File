@@ -33,6 +33,7 @@ toast({
     type: "success", // Choose from "success", "info", "warning", or "error"
     duration: 3000,  // Duration in milliseconds (default: 3000)
 });
+```
 
 ## Customization
 
