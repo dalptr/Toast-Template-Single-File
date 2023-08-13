@@ -33,8 +33,40 @@ toast({
     type: "success", // Choose from "success", "info", "warning", or "error"
     duration: 3000,  // Duration in milliseconds (default: 3000)
 });
-```javascript
 
 ## Customization
 
-The appearance of the toast notifications can be customized using CSS. The default styles are defined in the styles constant within the script. You can modify these styles to match your design preferences.
+The appearance of the toast notifications can be customized using CSS. The default styles are defined in the `styles` constant within the script. You can modify these styles to match your design preferences.
+
+## Icon Types
+
+Toast notifications can have different icons based on their types:
+
+- Success: Checkmark icon
+- Info: Information icon
+- Warning: Exclamation icon
+- Error: Exclamation icon
+
+## Function: `toast`
+
+### Parameters
+
+- `title` (optional): The title of the toast notification.
+- `message` (optional): The message content of the toast notification.
+- `type` (optional): The type of the toast notification. Available options: "success", "info", "warning", "error" (default: "info").
+- `duration` (optional): The duration in milliseconds that the toast notification will be visible (default: 3000).
+
+### Behavior
+
+- The toast notification slides in from the left and fades out after the specified duration.
+- Users can click the close icon to dismiss the toast notification manually.
+
+## CSS Styles
+
+The CSS styles for the toast notifications are defined within the `styles` constant in the script. You can modify these styles to achieve the desired appearance.
+
+## Conclusion
+
+`toast.js` simplifies the process of creating and displaying toast notifications in a web application. By following the provided documentation, you can seamlessly integrate this module into your projects and enhance user experience with informative and visually appealing notifications.
+
+Feel free to integrate the `toast.js` script into your web application and customize it according to your needs. If you have any further questions or need assistance, don't hesitate to ask.
