@@ -1,3 +1,10 @@
+const toastIconType = {
+    success: "fas fa-check-circle",
+    info: "fas fa-info-circle",
+    warning: "fas fa-exclamation-circle",
+    error: "fas fa-exclamation-circle",
+};
+
 document.addEventListener("DOMContentLoaded", function () {
     let divElement = document.createElement("div");
     divElement.id = "toast-container";
@@ -109,15 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.head.appendChild(styleTag);
 
 });
-
-
-const toastIconType = {
-    success: "fas fa-check-circle",
-    info: "fas fa-info-circle",
-    warning: "fas fa-exclamation-circle",
-    error: "fas fa-exclamation-circle",
-};
-
 
 function toast({title = "", message = "", type = "info", duration = 3000}) {
     const toastContainer = document.getElementById("toast-container");
