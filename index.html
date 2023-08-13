@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="toast.js"></script>
+    <title>Toast test</title>
+</head>
+<body>
+
+<button onclick="showSuccessToast();" class="btn btn--success">Show success toast</button>
+
+<script>
+    function showSuccessToast() {
+        toast({
+            title: "Thành công!",
+            message: "Bạn đã đăng ký thành công tài khoản tại F8.",
+            type: "success",
+            duration: 5000
+        });
+    }
+</script>
+</body>
+</html>
