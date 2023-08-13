@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-function toast({title = "", message = "", type = "info", duration = 3000}) {
+function sendToast({title = "", message = "", type = "info", duration = 3000}) {
     const toastContainer = document.getElementById("toast-container");
     if (toastContainer) {
         const toast = document.createElement("div");
