@@ -33,3 +33,7 @@ toast({
     type: "success", // Choose from "success", "info", "warning", or "error"
     duration: 3000,  // Duration in milliseconds (default: 3000)
 });
+
+## Customization
+
+The appearance of the toast notifications can be customized using CSS. The default styles are defined in the styles constant within the script. You can modify these styles to match your design preferences.
